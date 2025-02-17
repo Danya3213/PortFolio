@@ -46,14 +46,14 @@ $(document).ready(function(){
 			event.preventDefault();
 			var anchor = $(this);
 			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 0
+				scrollTop: $(anchor.attr('href')).offset().top - 89
 			}, 1200,'easeInOutExpo');
 		});
 		
-		// $('body').scrollspy({
-		// 	target:'.navbar-collapse',
-		// 	offset:0
-		// });
+		$('body').scrollspy({
+			target:'.navbar-collapse',
+			offset:90
+		});
 
 	// 3. Progress-bar
 	
@@ -113,15 +113,15 @@ $(document).ready(function(){
 
     // 5. welcome animation support
 
-        $(window).load(function(){
-        	$(".header-text h2,.header-text p").removeClass("animated fadeInUp").css({'opacity':'0'});
-            $(".header-text a").removeClass("animated fadeInDown").css({'opacity':'0'});
-        });
+        // $(window).load(function(){
+        // 	$(".header-text h2,.header-text p").removeClass("animated fadeInUp").css({'opacity':'0'});
+        //     $(".header-text a").removeClass("animated fadeInDown").css({'opacity':'0'});
+        // });
 
-        $(window).load(function(){
-        	$(".header-text h2,.header-text p").addClass("animated fadeInUp").css({'opacity':'0'});
-            $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
-        });
+        // $(window).load(function(){
+        // 	$(".header-text h2,.header-text p").addClass("animated fadeInUp").css({'opacity':'0'});
+        //     $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
+        // });
 
 });	
 	
