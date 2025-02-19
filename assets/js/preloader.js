@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const mask = document.querySelector('#preloader');
     const body = document.querySelector('body');
     const percents = document.querySelector('#loaderPercents');
+    const animationPreloaderItems = document.querySelectorAll('#preloaderAnim');
+    
     
     window.addEventListener('load', () => {
     
@@ -12,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
     
                 body.classList.add('_ready');
-                // DOMReady();
-            }, 100);
+                DOMReady();
+            }, 1000);
         }, 2000);
     });
 
@@ -30,12 +32,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 
             } else {
 
-                setInterval (clearInterval);
-                return (true);
+                clearInterval(intervalId);
             }
+
+            if (i > 90) {
+                
+                for (const item of animationPreloaderItems) {
+                    
+                    item.classList.add('_active');
+                }
+            } 
         }
 
-        setInterval (percentsAdding, 1);
+        let intervalId = setInterval(percentsAdding, 1);
     };
 
     percentsProcess();
