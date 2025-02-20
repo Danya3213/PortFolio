@@ -405,19 +405,19 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     position: relative;
 }
 
-.col-sm-4:nth-child(1) a::after {
+.col-sm-4:nth-child(2) a::after {
 
     content: '063-354-1391';
 }
 
-.col-sm-4:nth-child(2) a::after {
+.col-sm-4:nth-child(3) a::after {
 
     content: 'dn0992947530@info.com';
 }
 
-.col-sm-4:nth-child(3) a::after {
+.col-sm-4:nth-child(1) a::after {
 
-    content: 'github.com/Danya3213';
+    content: '21.08.2009';
 }
 
 .single-about-add-info a::after {
